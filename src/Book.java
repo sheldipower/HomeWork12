@@ -1,13 +1,28 @@
-import javax.security.sasl.AuthorizeCallback;
 
-public class Book {
-    String nameBook;
+    public class Book {
+    String bookName;
     Author authorName;
-    int theYearOfPublishing;
-public  Book(String nameBook, Author authorName, int theYearOfPublishing) {
-    this.nameBook = nameBook;
-    this.authorName = authorName;
-    this.theYearOfPublishing = theYearOfPublishing;
-}
-}
+    int publishingYear;
 
+    public Book (String bookName, Author authorName, int publishingYear) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.publishingYear = publishingYear;
+    }
+
+        public String getBookName() {
+        return  bookName;
+        }
+
+        public Author getAuthorName() {
+        return  authorName;
+        }
+
+        public int getPublishingYear() {
+        return publishingYear;
+        }
+
+        public void setPublishingYear(int publishingYear) {
+        this.publishingYear = publishingYear;
+        }
+}
